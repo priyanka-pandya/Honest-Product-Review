@@ -1,0 +1,283 @@
+ /* Universal Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: "Poppins", sans-serif;*/
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/bgpic.jpg'); /* Background image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repeat for the background */
+}
+
+/* Container styles for the comparison tool */
+.comparison-tool {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff; /* White text for contrast */
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    min-height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px; /* Reduced padding for a thinner header */
+    background-color: #4b1d3f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Container Styling */
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo Image Styling */
+header .logo img {
+    height: 50px; /* Reduced logo size */
+    margin-right: 10px;
+}
+
+/* Title Styling using the Dancing Script font */
+.dancing-script {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px; /* Reduced font size */
+    color: #fff;
+}
+
+/* Navigation Styling */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Item Styling */
+header nav ul li {
+    margin-left: 15px; /* Reduced spacing between items */
+    position: relative;
+}
+
+/* Navigation Link Styling */
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px; /* Reduced font size */
+    padding: 8px 15px; /* Reduced padding */
+    transition: background-color 0.3s ease;
+}
+
+/* Navigation Link Hover Effect */
+header nav ul li a:hover {
+    background-color: #70255f;
+    border-radius: 5px;
+}
+
+/* Explore Button Styling */
+header nav ul li .explore-button {
+    background-color: #b13f98;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 15px; /* Adjusted padding */
+    font-size: 14px; /* Adjusted font size */
+}
+
+/* Explore Button Hover Effect */
+header nav ul li .explore-button:hover {
+    background-color: #eb25b97a;
+}
+
+/* Heading Styles */
+.comparison-tool h2 {
+    font-size: 36px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff; /* White text for contrast */
+}
+
+.comparison-tool p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #fff; /* White text for contrast */
+}
+
+/* Search Bar and Category Selection Container */
+.search-and-category {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    position: relative;
+    flex-grow: 1; /* Expand search bar to fill available space */
+    margin-right: 10px;
+}
+
+.search-bar input[type="text"] {
+    padding: 15px 20px; /* Adjust padding for text and icon space */
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #777;
+}
+
+/* Category Selection Styles */
+.category-select {
+    flex-shrink: 0; /* Prevent shrinking of category dropdown */
+}
+
+.category-select select {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    width: 220px; /* Fixed width for dropdown */
+    box-sizing: border-box;
+}
+
+/* Product Comparison Section */
+.product-comparison {
+    display: flex; /* Display items in a row */
+    justify-content: space-between; /* Space between items */
+    align-items: flex-start; /* Align items to the start of the container */
+    width: 100%;
+    max-width: 800px; /* Adjust max width for better responsiveness */
+    margin-bottom: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Product Selection Styles */
+.product-selection {
+    flex: 1;
+    padding: 10px;
+}
+
+.product-selection label {
+    display: block;
+    margin: 10px 0 5px 0;
+    font-size: 16px;
+    color: #fff; /* White text for contrast */
+}
+
+.product-selection select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Button Styles */
+.compare-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #6a5acd; /* New button color for contrast */
+    color: #fff;
+    transition: background-color 0.3s ease;
+    width: 200px; /* Fixed width for button */
+}
+
+.compare-btn:hover {
+    background-color: #4b0082; /* Slightly darker shade on hover */
+}
+ 
+  
+
+/* Comparison Results Styling */
+.comparison-results {
+    margin-top: 30px;
+    background-color: rgba(251, 244, 252, 0.9); /* Light background for contrast */
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Detail Styles */
+.product-detail {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+}
+
+.product-detail h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #4b1d3f; /* Dark text color */
+}
+
+.product-detail p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #424037; /* Dark text color */
+}
+
+/* Footer */
+footer {
+    text-align:center;
+    padding: 5px 0;
+    background-color: #4b1d3f;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .search-and-category {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .search-bar {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .product-comparison {
+        flex-direction: column; /* Stack product comparison items vertically */
+        width: 100%; /* Full width on smaller screens */
+    }
+     
+
+}

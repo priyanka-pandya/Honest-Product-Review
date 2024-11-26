@@ -1,0 +1,233 @@
+ /* Universal styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px; /* Reduced padding for a thinner header */
+    background-color: #4b1d3f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo container styling */
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo image styling */
+header .logo img {
+    height: 50px; /* Reduced logo size */
+    margin-right: 10px;
+}
+
+/* Title styling using the Dancing Script font */
+.dancing-script {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px; /* Reduced font size */
+    color: #fff;
+}
+
+/* Navigation styling */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation item styling */
+header nav ul li {
+    margin-left: 15px; /* Reduced margin between items */
+    position: relative;
+}
+
+/* Navigation link styling */
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px; /* Reduced font size */
+    padding: 8px 15px; /* Reduced padding */
+    transition: background-color 0.3s ease;
+}
+
+/* Navigation link hover effect */
+header nav ul li a:hover {
+    background-color: #70255f;
+    border-radius: 5px;
+}
+
+/* Explore button styling */
+header nav ul li .explore-button {
+    background-color: #b13f98;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 15px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+}
+
+/* Explore button hover effect */
+header nav ul li .explore-button:hover {
+    background-color: #eb25b97a;
+}
+
+ /* Hero section styling */
+ .hero-section {
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .hero-content {
+    z-index: 1; /* Ensure the content is above the animated background */
+    color: #fff; /* Text color */
+    text-align: center;
+}
+
+/* Hero heading styling */
+.hero-section h2 {
+    font-size: 48px;
+    margin: 0 0 20px 0;
+}
+
+/* Hero paragraph styling */
+.hero-section p {
+    font-size: 18px;
+    margin: 0 0 30px 0;
+}
+
+/* Call-to-action button styling */
+.cta-button {
+    background-color: #ad7293;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+/* Call-to-action button hover effect */
+.cta-button:hover {
+    background-color: #70255f;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #4b1d3f;
+    color: #fff;
+}
+
+.homepic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundAnimation 15s infinite; /* Animation duration and looping */
+    z-index: -1; /* Keep it behind the content */
+}
+
+/* Animation keyframes for background slideshow */
+@keyframes backgroundAnimation {
+    0% { background-image: url('../images/bbgpic.jpeg'); }
+    33% { background-image: url('../images/homepic.jpg'); }
+    66% { background-image: url('../images/bgpic4.jpeg'); }
+    100% { background-image: url('../images/bbgpic.jpeg'); }
+}
+ 
+/* Existing styles */
+
+/* Reviews Section Styling */
+.reviews-section {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.reviews-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #4b1d3f;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+}
+
+.review-author {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #4b1d3f;
+}
+
+ /* Products Section Styling */
+.products-section {
+    padding: 40px;
+    background-color: #e8e8e8;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #4b1d3f;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates a responsive grid */
+    gap: 20px;
+    justify-items: center; /* Center items horizontally */
+}
+
+
+.products-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.products-container img:hover {
+    transform: scale(1.05);
+}

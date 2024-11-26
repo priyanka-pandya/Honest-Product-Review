@@ -1,0 +1,294 @@
+ /* Universal styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #4b1d3f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo container styling */
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo image styling */
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Title styling using the Dancing Script font */
+.dancing-script {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Navigation styling */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation item styling */
+header nav ul li {
+    margin-left: 15px;
+    position: relative;
+}
+
+/* Navigation link styling */
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+/* Navigation link hover effect */
+header nav ul li a:hover {
+    background-color: #70255f;
+    border-radius: 5px;
+}
+
+/* Explore button styling */
+header nav ul li .explore-button {
+    background-color: #b13f98;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+/* Explore button hover effect */
+header nav ul li .explore-button:hover {
+    background-color: #eb25b97a;
+}
+
+/* Category Filter Section */
+.category-filter {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.category-filter h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.category-button {
+    background-color: #70255f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category-button:hover {
+    background-color: #b13f98;
+}
+
+/* Product Display Section */
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.product-reviews {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-reviews .review {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.product-reviews .review-rating {
+    font-size: 14px;
+    color: #888;
+}
+
+.product-reviews .review p {
+    margin: 5px 0;
+}
+
+.product-reviews h4 {
+    color: #4b1d3f;
+    margin-bottom: 10px;
+}
+
+
+.rating {
+    margin-bottom: 15px;
+}
+
+.checked {
+    color: #f5c518;
+}
+
+.details-button {
+    background-color: #4b1d3f;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: #70255f;
+}
+ 
+
+/* Style for Review Form */
+ /* Review Form inside Product Card */
+.review-form {
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to left */
+    font-size: 14px;
+}
+
+.review-form h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #4b1d3f;
+}
+
+.review-form textarea {
+    width: 100%;
+    height: 60px;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    font-size: 13px;
+}
+
+.review-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #555;
+}
+
+.review-form select {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.review-form button {
+    width: 50%;
+    padding: 8px 15px;
+    background-color: #4b1d3f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.review-form button:hover {
+    background-color: #70255f;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #4b1d3f;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adjust product card to accommodate review form */
+.product-card {
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+ 
